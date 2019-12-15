@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name             = 'simplecodecompresser',
+    name             = 'SimpleCodeCompresser',
     version          = '1.0',
     description      = 'Just a simple code compresser',
     author           = 'lemon-mint',

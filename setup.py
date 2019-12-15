@@ -2,14 +2,14 @@ from setuptools import setup, find_packages
 
 setup(
     name             = 'SimpleCodeCompresser',
-    version          = '1.1',
+    version          = '1.2',
     description      = 'Just a simple code compresser',
     author           = 'lemon-mint',
     author_email     = 'ice.lemons.mint@gmail.com',
     url              = 'https://github.com/lemon-mint/simplecompresser',
     download_url     = 'https://github.com/lemon-mint/simplecompresser',
     install_requires = [],
-    packages         = find_packages(),
+    packages         = find_packages(include="simplecodecompresser.py"),
     keywords         = ['compress', 'codedeploy','deploy'],
     python_requires  = '>=3',
     package_data     =  {},

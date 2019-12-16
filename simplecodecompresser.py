@@ -138,6 +138,7 @@
 import base64
 import lzma
 import os
+import sys
 
 
 def compresscode(codeinput):
@@ -147,7 +148,10 @@ def compresscode(codeinput):
 
 
 if __name__ == "__main__":
-    filename = input("Input Filename >>>")
+    try:
+        filename = sys.argv[1]
+    except:
+        filename = input("Input Filename >>>")
     data = open(filename)
     path, truefilename = os.path.split(filename)
     output = compresscode(data.read())

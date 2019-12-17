@@ -139,6 +139,7 @@ import base64
 import lzma
 import os
 import sys
+import re
 
 
 def compresscode(codeinput):

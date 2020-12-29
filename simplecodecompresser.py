@@ -143,7 +143,7 @@ import re
 
 
 def compresscode(codeinput):
-    header = """import base64,lzma\nexec(lzma.decompress(base64.b64decode({data})))"""
+    header = """import base64,lzma\;exec(lzma.decompress(base64.b64decode({data})))"""
     return header.format(data=base64.b64encode(
         lzma.compress(bytes(codeinput, 'utf-8'))))
 
